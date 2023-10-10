@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #44475a;
+    font-family: monospace;
 }
 
 .logo {}
@@ -17,6 +18,28 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 160px;
+
+}
+
+.label{
+    background-color: #BD93F9;
+    color: #DBFF00;
+    width: 70px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+input{
+    width: 400px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.btn-send{
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
 }
 
 .icon-globe {
