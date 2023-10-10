@@ -1,0 +1,51 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #44475a;
+}
+
+.logo {}
+
+.menu {
+    background-color: #44475a;
+    /*border: 1px solid red;*/
+    width: 100vw;
+    height: 30vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon-globe {
+    background-color: #282a36;
+    width: 25px;
+    height: 25px;
+}
+
+.status-text {
+    background-color: #282a36;
+}
+
+.results {
+    /*border: 1px solid yellow;*/
+    height: 62.3vh;
+    background-color: #282a36;
+}
+
+.status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+    width: 120px;
+    background-color: #282a36;
+    /*border: 1px solid purple;*/
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}

@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/planet_icon.svg" type="icon">
     <title>SpaceGET</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <div>
-        <img src="" alt="logo">
-    </div>
+
     <section class="menu">
-        <div class="btn-get">
-            <button>GET</button>
+        <div class="logo">
+            <img src="" alt="logo">
         </div>
         <div class="nav">
             <label for="GET">
                 <select name="GET" id="">
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="GET">GET</option>
+                    <option value="POST">POST</option>
+                    <option value="PUT">PUT</option>
+                    <option value="DELETE">DELETE</option>
                 </select>
-                
                 <input type="text" placeholder="Introduzca URL">
             </label>
-        </div>
-        <div class="btn-send">
-            <button>SEND</button>
+            <div class="btn-send">
+                <button>SEND</button>
+            </div>
         </div>
     </section>
-    <section class="status">
-        <div></div>
+    <section>
+        <div class="status">
+            <img class="icon-globe" src="/img/globe-solid.svg" alt="icono de globo">
+            <p class="status-text">200 OK</p>
+        </div>
     </section>
-    <section class="results">
-        <div></div>
+    <section>
+        <div class="results">
+            <p>Body</p>
+        </div>
     </section>
 </body>
+
 </html>
