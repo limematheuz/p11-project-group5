@@ -4,22 +4,52 @@ const results = document.querySelector(".results");
 
 button.addEventListener("click", () => {
   const url = input.value;
+
   function getInformation(url) {
     fetch(url)
-      .then((response) =>{
+      .then((response) => {
         if (response.ok) {
           return response.json();
         } else {
-          throw new Error("Error 404");
+          throw new Error("Error " + response.status);
         }
       })
       .then((data) => {
         results.textContent = JSON.stringify(data, null, 2);
       })
       .catch((error) => {
-        results.textContent = error.menssage;
+        results.textContent = error.message;
       });
   }
 
   getInformation(url);
 });
+
+
+/* const input = document.querySelector("input");
+const button = document.querySelector("button");
+const results = document.querySelector(".results");
+
+button.addEventListener("click", () => {
+  const url = input.value;
+
+  function getInformation(url) {
+    fetch(url)
+      .then((response) => {
+        if (response.ok) {
+          return response.json(); // Interpretar la respuesta como JSON
+        } else {
+          throw new Error("Error " + response.status);
+        }
+      })
+      .then((data) => {
+        results.textContent = JSON.stringify(data, null, 2); // Mostrar la respuesta en formato JSON
+      })
+      .catch((error) => {
+        results.textContent = error.message;
+      });
+  }
+
+  getInformation(url);
+})
+*/
