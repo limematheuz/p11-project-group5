@@ -32,6 +32,7 @@ body {
     font-weight: bold;
     font-size: 17px;
     padding-left: 10px;
+    border: none;
 }
 
 input {
@@ -42,6 +43,7 @@ input {
     font-family: monospace;
     font-size: 17px;
     padding-left: 20px;
+    border: none;
 }
 
 .send-button {
@@ -52,6 +54,7 @@ input {
     color: white;
     font-weight: bold;
     font-size: 17px;
+    border: none;
 }
 
 .status {
