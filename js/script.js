@@ -24,32 +24,3 @@ button.addEventListener("click", () => {
 
   getInformation(url);
 });
-
-
-/* const input = document.querySelector("input");
-const button = document.querySelector("button");
-const results = document.querySelector(".results");
-
-button.addEventListener("click", () => {
-  const url = input.value;
-
-  function getInformation(url) {
-    fetch(url)
-      .then((response) => {
-        if (response.ok) {
-          return response.json(); // Interpretar la respuesta como JSON
-        } else {
-          throw new Error("Error " + response.status);
-        }
-      })
-      .then((data) => {
-        results.textContent = JSON.stringify(data, null, 2); // Mostrar la respuesta en formato JSON
-      })
-      .catch((error) => {
-        results.textContent = error.message;
-      });
-  }
-
-  getInformation(url);
-})
-*/
