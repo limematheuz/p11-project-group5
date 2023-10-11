@@ -1,6 +1,7 @@
 const input = document.querySelector("input");
 const button = document.querySelector("button");
 const results = document.querySelector(".results");
+const responseData = document.getElementById("responseData");
 
 button.addEventListener("click", () => {
   const url = input.value;
@@ -15,10 +16,10 @@ button.addEventListener("click", () => {
         }
       })
       .then((data) => {
-        results.textContent = JSON.stringify(data, null, 2);
+        responseData.textContent = JSON.stringify(data, null, 2);
       })
-      .catch((error) => {
-        results.textContent = error.message;
+      .catch(error => {
+        responseData.textContent = error.message;
       });
   }
 
