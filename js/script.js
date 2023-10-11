@@ -15,7 +15,8 @@ button.addEventListener("click", () => {
         }
       })
       .then((data) => {
-        results.textContent = JSON.stringify(data, null, 2);
+        let formattedJson = JSON.stringify(data, null, 4);
+        results.innerHTML = `<pre>${formattedJson}</pre>`
       })
       .catch((error) => {
         results.textContent = error.message;

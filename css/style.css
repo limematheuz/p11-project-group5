@@ -91,6 +91,7 @@ input {
     height: 90%;
     /*border: 1px solid black;*/
     margin: 20px;
+    color: white;
 }
 
 .results p {
