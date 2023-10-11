@@ -34,6 +34,9 @@ body {
     padding-left: 10px;
     border: none;
 }
+.label-button:hover{
+    background-color: #683aa8;
+}
 
 input {
     width: 900px;
@@ -45,6 +48,9 @@ input {
     padding-left: 20px;
     border: none;
 }
+.input:hover{
+    background-color: #ddd9e2;
+}
 
 .send-button {
     width: 100px;
@@ -55,6 +61,9 @@ input {
     font-weight: bold;
     font-size: 17px;
     border: none;
+}
+.send-button:hover{
+    background-color: #299143;;
 }
 
 .status {
