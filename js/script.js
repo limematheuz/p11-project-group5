@@ -4,6 +4,7 @@ const results = document.querySelector(".results");
 const responseData = document.getElementById("responseData");
 const httpOptions = document.querySelector("#httpOptions");
 
+
 button.addEventListener("click", () => {
   const url = input.value;
   const method = httpOptions.value;
@@ -32,7 +33,17 @@ button.addEventListener("click", () => {
       })
       .catch(error => {
         responseData.textContent = error.message;
+
       });
   }
   getInformation(url, method);
 });
+
+       /* const responseData = document.createElement("p");
+        p.innerHTML = `<p>${responseData}</p>`
+        responseData.appendChild(p);*/
+
+ // Crear un nuevo elemento de lista (<li>) y agregarlo a la lista
+ //const li = document.createElement("li");
+ //li.innerHTML = `<p>${camper}</p><button onclick="borrarNombre(${listaCampers.length - 1})"><img class="btn-cerrar" src="/static/img/borrar-03.svg" alt="cerrar"  /></button>`;
+ //elementCampers.appendChild(li);
