@@ -2,6 +2,7 @@ const input = document.querySelector("input");
 const button = document.querySelector("button");
 const results = document.querySelector(".results");
 const responseData = document.getElementById("responseData");
+const httpOptions = document.querySelector(".label-button");
 
 button.addEventListener("click", () => {
   const url = input.value;
