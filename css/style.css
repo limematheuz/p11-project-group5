@@ -2,13 +2,14 @@
     padding: 0;
     margin: 0;
     font-family: monospace;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 /* -- AQUÍ EMPIEZA LA PARTE SUPERIOR -- */
 
-body{
+body {
     background-color: #44475a;
+    overflow: hidden;
 }
 
 .parte-superior {
@@ -37,12 +38,14 @@ body{
     padding-left: 10px;
     border: none;
 }
-#httpOptions:hover{
-    background-color: #7b51b4;
+
+#httpOptions:hover {
+    background-color: rgb(148, 100, 216)
 }
 
-option{
-    background-color: #7b51b4;
+option {
+    background-color: #dac1fc;
+    color: black;
 }
 
 input {
@@ -55,11 +58,12 @@ input {
     padding-left: 20px;
     border: none;
 }
-.input:hover{
+
+.input:hover {
     background-color: #ddd9e2;
 }
 
-.input[type=text]{
+.input[type=text] {
     color: #44475a;
 }
 
@@ -73,8 +77,10 @@ input {
     font-size: 17px;
     border: none;
 }
-.send-button:hover{
-    background-color: #49bb65;;
+
+.send-button:hover {
+    background-color: #49bb65;
+    ;
 }
 
 .status {
@@ -91,8 +97,9 @@ input {
     font-size: 17px;
     color: #50FA7B;
 }
-section.parte-inferior{
-    background-color:  #282a36;
+
+section.parte-inferior {
+    background-color: #282a36;
 }
 
 .icon-globe {
@@ -122,15 +129,17 @@ section.parte-inferior{
 
 .results {
     width: 100%;
-    min-height: 445px;
-    height:auto;
+    height: 445px;
+    overflow-y: auto;
+    overflow-x: hidden;
     /*border: 1px solid black;*/
     margin: 20px;
 }
 
-.results p {
-    margin: 15px;
+.parte-inferior p {
+    margin-left: 15px;
+    margin-top: 15px;
     font-family: monospace;
-    font-size: 17px;
+    font-size: 15px;
     color: #6272A4;
 }
