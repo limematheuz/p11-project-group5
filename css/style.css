@@ -1,15 +1,19 @@
-body {
+* {
     padding: 0;
     margin: 0;
-    background-color: #44475a;
     font-family: monospace;
+    box-sizing:border-box;
 }
 
 /* -- AQUÍ EMPIEZA LA PARTE SUPERIOR -- */
 
+body{
+    background-color: #44475a;
+}
+
 .parte-superior {
     background-color: #44475a;
-    width: 100vw;
+    width: 100%;
     height: 45vh;
 }
 
@@ -20,10 +24,9 @@ body {
     justify-content: space-evenly;
     align-items: center;
     margin: 220px;
-
 }
 
-.label-button {
+#httpOptions {
     background-color: #BD93F9;
     color: #DBFF00;
     width: 120px;
@@ -34,8 +37,12 @@ body {
     padding-left: 10px;
     border: none;
 }
-.label-button:hover{
-    background-color: #683aa8;
+#httpOptions:hover{
+    background-color: #7b51b4;
+}
+
+option{
+    background-color: #7b51b4;
 }
 
 input {
@@ -52,6 +59,10 @@ input {
     background-color: #ddd9e2;
 }
 
+.input[type=text]{
+    color: #44475a;
+}
+
 .send-button {
     width: 100px;
     height: 40px;
@@ -63,7 +74,7 @@ input {
     border: none;
 }
 .send-button:hover{
-    background-color: #299143;;
+    background-color: #49bb65;;
 }
 
 .status {
@@ -75,10 +86,13 @@ input {
     height: 40px;
     background-color: #282a36;
     border-radius: 20px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin-left: 24px;
+    margin-bottom: 14px;
     font-size: 17px;
     color: #50FA7B;
+}
+section.parte-inferior{
+    background-color:  #282a36;
 }
 
 .icon-globe {
@@ -91,14 +105,25 @@ input {
 
 .parte-inferior {
     display: flex;
-    height: 100%;
     background-color: #282a36;
     color: #6272A4;
 }
 
+/*.parte-inferior::-webkit-scrollbar{
+    width: 100%;
+    height: 6px;
+    background-color: rgba(0, 132, 255, 0);
+}
+.parte-inferior::-webkit-scrollbar-thumb{
+    background-color: #00B9FD;
+    border-radius: 20px;
+    width: 50px;
+}*/
+
 .results {
     width: 100%;
-    height: 90%;
+    min-height: 445px;
+    height:auto;
     /*border: 1px solid black;*/
     margin: 20px;
 }
