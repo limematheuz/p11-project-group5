@@ -91,8 +91,9 @@ input {
 
 .parte-inferior {
     display: flex;
-    height: 49.4vh;
+    height: 100%;
     background-color: #282a36;
+    color: white;
 }
 
 .results {
