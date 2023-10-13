@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/img/planet_icon.svg" type="icon" />
-  <title>APIxplore</title>
-  <link rel="stylesheet" href="/css/style.css" />
-</head>
-<body>
-  <section class="parte-superior">
-      <div>
-       <img class="logo" src="/img/logooo.PNG" alt="logo"/>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/planet_icon.svg" type="icon" />
+    <title>APIxplore</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section class="parte-superior">
+      <img class="logo" src="/img/logooo.PNG" alt="logo" />
       <div>
         <h6>Explore Data!</h6>
       </div>
-    <div class="nav">
-      <label for="GET">
-        <select id="httpOptions" name="GET" id="">
-          <option value="GET">GET</option>
-          <option value="POST">POST</option>
-          <option value="PUT">PUT</option>
-          <option value="DELETE">DELETE</option>
-        </select>
-        <input class="input" type="text" placeholder="Introduzca URL" />
-        <button class="send-button">SEND</button>
-      </label>
-    </div>
-  </section>
-  <section>
-    <div class="status">
-      <img class="icon-globe" src="/img/globe-solid.svg" alt="icono de globo" />
-      <p class="status-text"></p>
-    </div>
-  </section>
-  <section>
-    <div class="parte-inferior">
-      <span>Body</span>
-      <div class="results">
-        <pre id="responseData"></pre>
+      <div class="nav">
+        <label for="GET">
+          <select id="httpOptions" name="GET" id="">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+          </select>
+          <input class="input" type="text" placeholder="Introduzca URL" />
+          <button class="send-button">SEND</button>
+        </label>
       </div>
-    </div>
-  </section>
-  <script src="/js/script.js"></script>
-</body>
-
+    </section>
+    <section>
+      <div class="status">
+        <img
+          class="icon-globe"
+          src="/img/globe-solid.svg"
+          alt="icono de globo"
+        />
+        <p class="status-text"></p>
+      </div>
+    </section>
+    <section>
+      <div class="parte-inferior">
+        <span>Body</span>
+        <div class="results">
+          <pre id="responseData"></pre>
+        </div>
+      </div>
+    </section>
+    <script src="/js/script.js"></script>
+  </body>
 </html>

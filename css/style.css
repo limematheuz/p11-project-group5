@@ -20,12 +20,11 @@ body {
 }
 
 .logo {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
-    align-content: end;
+    margin: auto;
 }
  h6{
     display: flex;
@@ -33,7 +32,6 @@ body {
     font-weight: bolder;
     font-size: 40px;
     color: #1c274c;
-    margin-bottom: none;
  }
 .nav {
     display: flex;
@@ -158,5 +156,6 @@ section.parte-inferior {
     font-family: monospace;
     font-size: 15px;
     color: #6272A4;
+    
 }
 
