@@ -3,7 +3,7 @@ const button = document.querySelector("button");
 const results = document.querySelector(".results");
 const responseData = document.getElementById("responseData");
 const httpOptions = document.querySelector("#httpOptions");
-
+const statusText = document.querySelector(".status-text");
 
 button.addEventListener("click", () => {
   const url = input.value;
@@ -22,10 +22,12 @@ button.addEventListener("click", () => {
     }
     fetch(url, requestConfig)
       .then((response) => {
+        let status = response.status;
+        statusText.innerHTML = status;
         if (response.ok) {
           return response.json();
         } else {
-          throw new Error("Error " + response.status);
+          throw new Error("Method not allowed!");
         }
       })
       .then((data) => {
@@ -39,11 +41,3 @@ button.addEventListener("click", () => {
   getInformation(url, method);
 });
 
-       /* const responseData = document.createElement("p");
-        p.innerHTML = `<p>${responseData}</p>`
-        responseData.appendChild(p);*/
-
- // Crear un nuevo elemento de lista (<li>) y agregarlo a la lista
- //const li = document.createElement("li");
- //li.innerHTML = `<p>${camper}</p><button onclick="borrarNombre(${listaCampers.length - 1})"><img class="btn-cerrar" src="/static/img/borrar-03.svg" alt="cerrar"  /></button>`;
- //elementCampers.appendChild(li);

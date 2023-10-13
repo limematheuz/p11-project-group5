@@ -132,8 +132,20 @@ section.parte-inferior {
     height: 445px;
     overflow-y: auto;
     overflow-x: hidden;
-    /*border: 1px solid black;*/
     margin: 20px;
+    overflow-y: scroll;
+}
+
+.results::-webkit-scrollbar{
+    width: 12px;
+    background-color: #44475a00;
+    border-radius: 20px;
+}
+.results::-webkit-scrollbar-thumb{
+    background-color: #cebebe6c;
+    border-radius: 20px;
+    width: 2px;
+    height: 20px;
 }
 
 .parte-inferior p {
