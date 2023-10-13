@@ -25,6 +25,7 @@ body {
     align-items: center;
     width: 200px;
     margin: auto;
+    margin-top: 20px;
 }
  h6{
     display: flex;
