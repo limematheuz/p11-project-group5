@@ -35,9 +35,11 @@ body {
  }
 .nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin: 220px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-top: 75px;
 }
 
 #httpOptions {
